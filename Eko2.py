@@ -13,9 +13,14 @@ def EtoD():
     vastaus = syote * 1.2669
     print("Eurot dollareina: ",round(vastaus,2))
 
+def CtoF():
+    syote=float(input("Anna muutettava Celcius-määrä: ")) #lisätty
+    vastaus = (syote*1.8 + 32)
+    print("Celciukset Fahrenheitteina: ",round(vastaus,2)) 
+
 def FtoC():
     syote=float(input("Anna muutettava Fahrenfeit määrä: "))
-    vastaus = syote / 1.8 + 32
+    vastaus = syote / 1.8 + 32 #tässä on muuten virhe
     print("Fahrenheitit celciuksina: ",round(vastaus,2))
 
 
